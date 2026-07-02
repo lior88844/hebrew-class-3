@@ -1,0 +1,130 @@
+import DashboardCard from "./common/DashboardCard";
+import type { ActivityId, ActivityMeta } from "../types";
+
+const ACTIVITIES: ActivityMeta[] = [
+  {
+    id: "number-ref",
+    title: "Number Reference",
+    titleHe: "לוּחַ הַמִּסְפָּרִים",
+    description: "Count 0–120 in Hebrew — range tabs, spotlight & count-together mode",
+    emoji: "🔢",
+    color: "#5b5ea6",
+  },
+  {
+    id: "fruit-stand",
+    title: "Fruit Stand",
+    titleHe: "דּוּכַן פֵּרוֹת",
+    description: "Practice numbers 1–10 through fruit prices",
+    emoji: "🍎",
+    color: "#e74c3c",
+  },
+  {
+    id: "fill-basket",
+    title: "Fill the Basket",
+    titleHe: "מַלֵּא אֶת הַסַּל",
+    description: "Practice quantities with plus/minus counters",
+    emoji: "🧺",
+    color: "#f39c12",
+  },
+  {
+    id: "bakery",
+    title: "Bakery Prices",
+    titleHe: "מְחִירֵי הַמַּאֲפִיָּה",
+    description: "Practice numbers 11–40",
+    emoji: "🥐",
+    color: "#d35400",
+  },
+  {
+    id: "grocery-math",
+    title: "Grocery Store Math",
+    titleHe: "חִישׁוּבִים בַּסּוּפֶּרְמַרְקֶט",
+    description: "Multiplication and totals",
+    emoji: "🧮",
+    color: "#27ae60",
+  },
+  {
+    id: "checkout",
+    title: "Checkout Receipt",
+    titleHe: "חֶשְׁבּוֹנִית הַקּוּפָּה",
+    description: "Read a receipt and calculate totals",
+    emoji: "🧾",
+    color: "#2980b9",
+  },
+  {
+    id: "discount",
+    title: "Discount Game",
+    titleHe: "מִשְׂחַק הַהֲנָחוֹת",
+    description: "Compare before/after prices",
+    emoji: "🏷",
+    color: "#8e44ad",
+  },
+  {
+    id: "cart-challenge",
+    title: "Shopping Cart Challenge",
+    titleHe: "אַתְגַּר עֲגֶלֶת הַקְּנִיּוֹת",
+    description: "Stay within a ₪50 budget",
+    emoji: "🛒",
+    color: "#16a085",
+  },
+  {
+    id: "market-race",
+    title: "Market Race",
+    titleHe: "מֵרוֹץ הַשּׁוּק",
+    description: "Fast price recognition — click the right item",
+    emoji: "🏁",
+    color: "#c0392b",
+  },
+  {
+    id: "receipt-detective",
+    title: "Receipt Detective",
+    titleHe: "בַּלָּשׁ הַחֶשְׁבּוֹנִיּוֹת",
+    description: "Investigate a realistic 10-item receipt",
+    emoji: "🔍",
+    color: "#2c3e50",
+  },
+  {
+    id: "supermarket-mission",
+    title: "Final Supermarket Mission",
+    titleHe: "הַמִּשִּׁימָה הַסּוֹפִית",
+    description: "Build a cart with ₪120 budget — don't miss required items!",
+    emoji: "🏆",
+    color: "#f1c40f",
+  },
+];
+
+interface Props {
+  onSelect: (id: ActivityId) => void;
+}
+
+export default function Dashboard({ onSelect }: Props) {
+  return (
+    <div className="dashboard">
+      <header className="dashboard-header">
+        <div className="dashboard-title-block">
+          <h1 className="dashboard-title">
+            קְנִיּוֹת בְּעִבְרִית
+          </h1>
+          <h2 className="dashboard-subtitle">Shopping in Hebrew</h2>
+          <p className="dashboard-desc">
+            Interactive lesson board — teacher-guided activities for adult learners
+          </p>
+        </div>
+        <div className="dashboard-badge-row">
+          <span className="lang-badge">🇮🇱 עִבְרִית</span>
+          <span className="lang-badge">🇬🇧 English support</span>
+          <span className="lang-badge">₪ שְׁקָלִים</span>
+        </div>
+      </header>
+
+      <div className="dashboard-grid">
+        {ACTIVITIES.map((activity) => (
+          <DashboardCard
+            key={activity.id}
+            activity={activity}
+            onClick={() => onSelect(activity.id)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
