@@ -8,6 +8,10 @@ export interface Product {
 
 export type ActivityId =
   | "number-ref"
+  | "price-bingo"
+  | "cafe-order"
+  | "sentence-builder"
+  | "shopping-dictation"
   | "fruit-stand"
   | "fill-basket"
   | "bakery"

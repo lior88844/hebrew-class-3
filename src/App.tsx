@@ -1,6 +1,10 @@
 import { useState } from "react";
 import Dashboard from "./components/Dashboard";
 import NumberReference from "./components/activities/NumberReference";
+import PriceBingo from "./components/activities/PriceBingo";
+import CafeOrder from "./components/activities/CafeOrder";
+import SentenceBuilder from "./components/activities/SentenceBuilder";
+import ShoppingDictation from "./components/activities/ShoppingDictation";
 import FruitStand from "./components/activities/FruitStand";
 import FillTheBasket from "./components/activities/FillTheBasket";
 import BakeryPrices from "./components/activities/BakeryPrices";
@@ -19,6 +23,10 @@ export default function App() {
   const goBack = () => setCurrent(null);
 
   if (current === "number-ref") return <NumberReference onBack={goBack} />;
+  if (current === "price-bingo") return <PriceBingo onBack={goBack} />;
+  if (current === "cafe-order") return <CafeOrder onBack={goBack} />;
+  if (current === "sentence-builder") return <SentenceBuilder onBack={goBack} />;
+  if (current === "shopping-dictation") return <ShoppingDictation onBack={goBack} />;
   if (current === "fruit-stand") return <FruitStand onBack={goBack} />;
   if (current === "fill-basket") return <FillTheBasket onBack={goBack} />;
   if (current === "bakery") return <BakeryPrices onBack={goBack} />;
