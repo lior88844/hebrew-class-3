@@ -17,7 +17,7 @@ const MENU: MenuItem[] = [
   { id: "latte",      nameHe: "לַטֶּה",              nameEn: "Latte",           price: 22, emoji: "🥛", category: "drink" },
   { id: "cappuccino", nameHe: "קַפּוּצִ'ינוֹ",       nameEn: "Cappuccino",      price: 22, emoji: "☁️", category: "drink" },
   { id: "iced",       nameHe: "קָפֶה קַר",           nameEn: "Iced Coffee",     price: 26, emoji: "🧊", category: "drink" },
-  { id: "matcha",     nameHe: "מַתְּחָה לַטֶּה",     nameEn: "Matcha Latte",    price: 28, emoji: "🍵", category: "drink" },
+  { id: "matcha",     nameHe: "מָאצ'ה לַאטֶה",      nameEn: "Matcha Latte",    price: 28, emoji: "🍵", category: "drink" },
   { id: "croissant",  nameHe: "קְרוּאָסוֹן חֶמְאָה", nameEn: "Butter Croissant",price: 18, emoji: "🥐", category: "food"  },
   { id: "muffin",     nameHe: "מַאֲפִין שׁוֹקוֹלָד", nameEn: "Choc Muffin",     price: 24, emoji: "🧁", category: "food"  },
   { id: "avotoast",   nameHe: "אֲבוֹקָדוֹ טוֹסְט",  nameEn: "Avocado Toast",   price: 52, emoji: "🥑", category: "food"  },

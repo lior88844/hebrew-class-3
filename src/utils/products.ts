@@ -56,7 +56,7 @@ export const SUPERMARKET_ALL_PRODUCTS: Product[] = [
   { id: "orange_juice",     nameHe: "מִיץ תַּפּוּזִים",         nameEn: "Orange Juice",        price: 16, emoji: "🧃" },
   { id: "water",            nameHe: "מַיִם מִינֶרָלִי",         nameEn: "Mineral Water",       price: 6,  emoji: "💧" },
   { id: "coffee",           nameHe: "קָפֶה",                   nameEn: "Coffee",              price: 35, emoji: "☕" },
-  { id: "matcha",           nameHe: "מַתְּחָה",                 nameEn: "Matcha",              price: 42, emoji: "🍵" },
+  { id: "matcha",           nameHe: "מָאצ'ה",                  nameEn: "Matcha",              price: 42, emoji: "🍵" },
   { id: "pasta",            nameHe: "פַּסְטָה",                 nameEn: "Pasta",               price: 11, emoji: "🍝" },
   { id: "quinoa",           nameHe: "קִינוֹאָה",                nameEn: "Quinoa",              price: 28, emoji: "🌾" },
   { id: "purple_onion",     nameHe: "בָּצָל סָגוֹל",            nameEn: "Purple Onion",        price: 5,  emoji: "🧅" },

@@ -104,7 +104,7 @@ export default function PriceBingo({ onBack }: Props) {
               </>
             ) : (
               <p className="bingo-call-empty">
-                {allDone ? "🎉 כַּרְטִיס מָלֵא! Card complete!" : "Press "Call Number" to begin"}
+                {allDone ? "🎉 כַּרְטִיס מָלֵא! Card complete!" : 'Press "Call Number" to begin'}
               </p>
             )}
           </div>
