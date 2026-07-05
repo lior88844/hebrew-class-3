@@ -21,7 +21,11 @@ export type ActivityId =
   | "cart-challenge"
   | "market-race"
   | "receipt-detective"
-  | "supermarket-mission";
+  | "supermarket-mission"
+  | "family-numbers"
+  | "bomb-number"
+  | "dont-hit-100"
+  | "count-to-100";
 
 export interface ActivityMeta {
   id: ActivityId;

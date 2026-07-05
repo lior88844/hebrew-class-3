@@ -122,6 +122,38 @@ const ACTIVITIES: ActivityMeta[] = [
     emoji: "🏆",
     color: "#f1c40f",
   },
+  {
+    id: "family-numbers",
+    title: "Family Numbers",
+    titleHe: "מִסְפָּרֵי הַמִּשְׁפָּחָה",
+    description: "Count family members using masculine-form numbers 1–10",
+    emoji: "👨‍👦",
+    color: "#f0fdf4",
+  },
+  {
+    id: "bomb-number",
+    title: "Bomb Number",
+    titleHe: "מִסְפַּר הַפְּצָצָה",
+    description: "Secret ₪ target — add Hebrew amounts each turn. Whoever hits it loses!",
+    emoji: "💣",
+    color: "#fff8f0",
+  },
+  {
+    id: "dont-hit-100",
+    title: "Don't Hit 100",
+    titleHe: "אַל תִּגַּע בְּמֵאָה",
+    description: "Add ₪1–20 (no repeats). Say every move in Hebrew. Land on ₪100 and you lose!",
+    emoji: "🧨",
+    color: "#fff0f0",
+  },
+  {
+    id: "count-to-100",
+    title: "Count to 100",
+    titleHe: "לִסְפּוֹר עַד מֵאָה",
+    description: "Round 1: count with Hebrew · Round 2: say it from memory (blind mode)",
+    emoji: "💯",
+    color: "#f0f9ff",
+  },
 ];
 
 interface Props {
